@@ -194,6 +194,8 @@ class Fasttrack():
                                 dogData['TrainerName'] = dogData['Trainer'].get('#text', None)
                                 dogData.pop('Trainer', None)
                                 dogRows.append(dogData)
+                    else:
+                        continue
                     raceData.pop('Dog', None)
                     raceData.pop('Dividends', None)
                     raceData.pop('Exotics', None)
